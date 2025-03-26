@@ -1,2 +1,2 @@
 # LMP
-It's just an experimental project for my engineering practice class on large models of AI
+This is a machine translation model based on Translate, developed as a project for my engineering practice course with my group members.
