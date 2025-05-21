@@ -1,0 +1,123 @@
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* 卡片样式 */
+.card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    border: none;
+}
+
+.card-header {
+    background-color: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* 拖放区域样式 */
+.drop-zone {
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+    transition: all 0.3s;
+    cursor: pointer;
+    background-color: #f8f9fa;
+}
+
+.drop-zone:hover {
+    border-color: #0d6efd;
+    background-color: #f0f7ff;
+}
+
+.drop-zone.active {
+    border-color: #0d6efd;
+    background-color: #e7f1ff;
+}
+
+.drop-zone-icon {
+    font-size: 2.5rem;
+    color: #6c757d;
+    margin-bottom: 10px;
+}
+
+/* 图片预览 */
+#preview-image {
+    max-height: 300px;
+    object-fit: contain;
+    border: 1px solid #dee2e6;
+}
+
+/* 文本区域 */
+textarea {
+    resize: none;
+    background-color: #f8f9fa;
+    border: 1px solid #ced4da;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+textarea:focus {
+    background-color: white;
+    border-color: #86b7fe;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* 标签页样式 */
+.nav-tabs {
+    border-bottom: none;
+    margin-bottom: -1px;
+}
+
+.nav-tabs .nav-link {
+    border: none;
+    color: #495057;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0;
+    font-weight: 500;
+}
+
+.nav-tabs .nav-link.active {
+    color: #0d6efd;
+    background-color: transparent;
+    border-bottom: 2px solid #0d6efd;
+}
+
+.nav-tabs .nav-link:hover:not(.active) {
+    border-bottom: 2px solid #dee2e6;
+}
+
+/* 标签内容区域 */
+.tab-content {
+    padding-top: 15px;
+}
+
+/* 按钮样式 */
+.btn-primary {
+    padding: 10px;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .drop-zone {
+        padding: 20px;
+    }
+    
+    .nav-tabs .nav-link {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+    
+    #keyboard-source {
+        min-height: 150px;
+    }
+    
+    .card-header h5 {
+        font-size: 1.1rem;
+    }
+}
+
+/* 图标间距 */
+.bi {
+    margin-right: 5px;
+}
